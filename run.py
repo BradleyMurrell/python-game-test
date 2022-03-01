@@ -16,9 +16,20 @@ while game_start == "yes":
         print("You come across a merchant. Do you stop and talk to the merchant?")
         answer_2_a = input("yes or no? ")
         if answer_2_a == "yes":
-            print("The merchant shows you his wares")
+            print("The merchant is actually a ninja and kills you")
+            print("Game over")
         else:
-            print("You continue your journey")
+            print("You continue your journey.")
+            print(" You walk past a lake. Do you go fishing?")
+            answer_3_a = input("yes or no? ")
+            if answer_3_a == "yes":
+                print("You catch a fish and eat it")
+                print("Now that you are well rested, you continue your journey")
+                print("You make it to the castle and delivered your message")
+                print("You win")
+            else:
+                print("You starve to death")
+                print("Game over")
 
     else:
         print("You come across a bridge. Do you cross the bridge?")
@@ -30,8 +41,18 @@ while game_start == "yes":
         answer_2_b = input("yes or no? ")
         if answer_2_b == "yes":
             print("You make it across just in time")
+            print("You walk into a troll. Do you attack it?")
         else:
             print("You fall to your death")
+            print("Game over")
+            answer_3_b = input("yes or no ")
+            if answer_3_b == "yes":
+                print("You attack the troll and kill it")
+                print("You continue your journey and make it to the castle to deliver your message")
+                print("You win")
+            else:
+                print("You try to sneak around the troll, but it see's you and kills you")
+                print("Game over")
     
 
 
