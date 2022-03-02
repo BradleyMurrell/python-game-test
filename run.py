@@ -7,11 +7,7 @@ character_name = input("Please enter your character's name: ")
 print("-" * 35)
 
 while game_start == "yes":
-    print(f"A messenger named {character_name} has been tasked to deliver an important message to the castle.")
-    print(f"Along the way, {character_name} came to a crossroad. To the left, the path led through mountains.")
-    print(f"To the right, the path led through a dark and scary forest.")
-    print(f"The mountains look safer, but will probably take a few extra days to reach the castle.")
-    print(f"The scary forest would be quicker, but it looks dangerous. Does {character_name} go left or right?")
+    print(f"A messenger named {character_name} has been tasked to deliver an important message to the castle. \nAlong the way, {character_name} came to a crossroad. To the left, the path led through mountains. \nTo the right, the path led through a dark and scary forest. The mountains look safer, \nbut will probably take a few extra days to reach the castle. The scary forest would \nbe quicker, but it looks dangerous. \nDoes {character_name} go left or right?")
     print("-" * 35)
     answer_1 = input("[Enter: left or right?] ")
     print("-" * 35)
@@ -29,15 +25,12 @@ while game_start == "yes":
             print("-" * 35)
             print("Game over")
         if answer_2_a == "no":
-            print("You continue your journey.")
-            print("You walk past a lake. Do you go fishing?")
+            print("You continue your journey. \nYou walk past a lake. Do you go fishing?")
             print("-" * 35)
             answer_3_a = input("[Enter: yes or no?] ")
             print("-" * 35)
             if answer_3_a == "yes":
-                print("You catch a fish and eat it")
-                print("Now that you are well rested, you continue your journey")
-                print("You make it to the castle and delivered your message")
+                print("You catch a fish and eat it. \nNow that you are well rested, you continue your journey. \nYou make it to the castle and delivered your message.")
                 print("-" * 35)
                 print("You win")
             if answer_3_a == "no":
@@ -57,13 +50,11 @@ while game_start == "yes":
         answer_2_b = input("[Enter: yes or no?] ")
         print("-" * 35)
         if answer_2_b == "yes":
-            print("You make it across just in time")
-            print("You walk into a troll. Do you attack it?")
+            print("You make it across just in time. \nYou walk into a troll. Do you attack it?")
             answer_3_b = input("[Enter: yes or no?] ")
             print("-" * 35)
             if answer_3_b == "yes":
-                print("You attack the troll and kill it")
-                print("You continue your journey and make it to the castle to deliver your message")
+                print("You attack the troll and kill it. \nYou continue your journey and make it to the castle to deliver your message")
                 print("-" * 35)
                 print("You win")
             if answer_3_b == "no":
