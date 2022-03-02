@@ -20,7 +20,7 @@ while game_start == "yes":
             print("Game over")
         else:
             print("You continue your journey.")
-            print(" You walk past a lake. Do you go fishing?")
+            print("You walk past a lake. Do you go fishing?")
             answer_3_a = input("yes or no? ")
             if answer_3_a == "yes":
                 print("You catch a fish and eat it")
@@ -42,10 +42,7 @@ while game_start == "yes":
         if answer_2_b == "yes":
             print("You make it across just in time")
             print("You walk into a troll. Do you attack it?")
-        else:
-            print("You fall to your death")
-            print("Game over")
-            answer_3_b = input("yes or no ")
+            answer_3_b = input("yes or no? ")
             if answer_3_b == "yes":
                 print("You attack the troll and kill it")
                 print("You continue your journey and make it to the castle to deliver your message")
@@ -53,7 +50,9 @@ while game_start == "yes":
             else:
                 print("You try to sneak around the troll, but it see's you and kills you")
                 print("Game over")
-    
+        else:
+            print("You fall to your death")
+            print("Game over") 
 
 
     game_start = input("Play again: ")
